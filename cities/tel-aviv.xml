@@ -1,0 +1,48 @@
+﻿<city name="tel-aviv" description="תל אביב" method="email" email-address="appeal@tel-aviv.co.il">
+	<offenses>
+		<offense name="white-blue" description="חנייה בכחול לבן">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+				עיריית תל אביב היקרה, שמי {fullname}, ובתאריך {current-date} ביצעתי שוד בבנק בסניף בלהבלה. 
+				אני מתחרט ואבקש להמתיק את גזר הדין.
+				
+				בתודה,
+				{fullname}
+			</message-template>
+		</offense>
+		
+		<offense name="murder" description="רצח">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" direction="ltr" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+				<row>
+					<field name="victim" label="קורבן" size="8" tabindex="3" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+				שלום עיריית תל אביב,
+				בתאריך 27/10/2009 רצחתי את {victim}.
+				
+				תודה,
+				{fullname}
+			</message-template>
+		</offense>
+	</offenses>
+</city>

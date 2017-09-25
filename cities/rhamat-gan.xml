@@ -1,0 +1,157 @@
+<city name="rhamat-gan" description="רמת גן" method="email" email-address="eliran013@gmail.com">
+	<offenses>
+		<offense name="white-blue" description="חניתי בכחול לבן בטווח השעות שמצויין בשלט">
+			<fields>
+				<row>
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" remember="true" />
+					<field name="email" direction="ltr" type="email" label="דואר אלקטרוני" size="5" tabindex="2" remember="true" />
+				</row>
+				
+				<row>
+					<field name="platenumber" direction="ltr" type="tel" label="מספר דוח" size="4" tabindex="3" />
+					<field name="idnumber" mask="99999999 - 9" direction="ltr" label="מספר תעודת זהות" size="4" tabindex="4" remember="true" />
+				</row>
+				
+				<row>
+					<field name="address" label="כתובת מלאה" size="4" tabindex="5" remember="true" />
+					<field name="phonenumber" mask="999 - 9999999" direction="ltr" type="tel" label="טלפון" size="4" tabindex="6" />
+				</row>
+				
+				<row>
+					<field name="time" type="time" label="השעה שבו ניתן הדוח" size="4" tabindex="7" />
+					<field name="date" type="date" label="התאריך שבו ניתן הדוח" size="4" tabindex="8" />
+				</row>
+				
+				<row>
+					<field name="location" label="הכתובת שבה ניתן הדוח" size="8" tabindex="9" />
+				</row>
+				
+				<row>
+					<field name="forbidden_time_start" type="time" label="השעה שלפניה אסור לחנות על פי השלט" size="4" tabindex="10" />
+					<field name="forbidden_time_end" type="time" label="השעה שאחריה אסור לחנות על פי השלט" size="4" tabindex="11" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				ערעור על דוח חניה שניתן בכחול לבן
+			</subject-template>
+			
+			<message-template>
+				לעיריית רמת גן שלום,
+				שמי {fullname}, ובתאריך {date} קיבלתי דוח על חניה בכחול לבן ב{location}.
+				
+				הדוח ניתן בשעה {time}, אף על פי שבשלט שבחניה כתוב שהחניה אסורה אך ורק בין השעות {forbidden_time_start} ל- {forbidden_time_end}.
+				
+				אבקש לבטל את הדוח.
+				
+				תודה,
+				{fullname}
+				כתובת: {address}
+				טלפון: {phonenumber}
+				דואר אלקטרוני: {email}
+			</message-template>
+		</offense>
+		
+		<offense name="white-blue-ticket" description="חניתי בכחול לבן עם כרטיס חניה אך הפקח לא ראה את הכרטיס">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+		
+		<offense name="white-blue-app" description="חניתי בכחול לבן עם אפליקציה (סלופארק/פנגו) ובכל זאת קיבלתי דוח">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+		
+		<offense name="double" description="חניתי בחניה כפולה">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+		
+		<offense name="bus" description="חניתי בתחנת אוטובוס">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+		
+		<offense name="two-wheels-sidewalk" description="חניתי עם 2 גלגלים על המדרכה במקום שמאפשר זאת">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+		
+		<offense name="other" description="אחר">
+			<fields>
+				<row>
+					<field name="email" label="דואר אלקטרוני" size="5" tabindex="2" />
+					<field name="fullname" label="שם מלא" size="3" tabindex="1" />
+				</row>
+			</fields>
+			
+			<subject-template>
+				שלום לעיריית תל אביב
+			</subject-template>
+			
+			<message-template>
+
+			</message-template>
+		</offense>
+	</offenses>
+</city>
